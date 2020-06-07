@@ -5275,11 +5275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Api\\API.csproj",
+      "projectUniqueName": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Api\\API.csproj",
       "projectName": "API",
-      "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Api\\API.csproj",
+      "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Api\\API.csproj",
       "packagesPath": "X:\\Usuarios\\aleko\\.nuget\\packages\\",
-      "outputPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Api\\obj\\",
+      "outputPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5298,14 +5298,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\API.dto\\API.dto.csproj": {
-              "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\API.dto\\API.dto.csproj"
+            "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\API.dto\\API.dto.csproj": {
+              "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\API.dto\\API.dto.csproj"
             },
-            "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Application\\Application.csproj": {
-              "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Application\\Application.csproj"
+            "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Application\\Application.csproj": {
+              "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Application\\Application.csproj"
             },
-            "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Infrastructure\\Infrastructure.csproj"
+            "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

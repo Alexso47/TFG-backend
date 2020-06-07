@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QT90oQfNeqByUnCMqa/LlBFyWHzZBNRfpc+oKptVjv9GplwV3ulwEFqF6ZaZd3JuVAgCP73xOzUiP64/mwtrqA==",
+  "dgSpecHash": "aDqkh6bBRaAvbRwTuhW8cRSaOnSo39MRQhHZ9ek16fKrAJLiJK+NHGMQgV8tjvOFXTbn20DvH8g5M3b3EyEuug==",
   "success": true,
-  "projectFilePath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Application\\Application.csproj",
+  "projectFilePath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "X:\\Usuarios\\aleko\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "X:\\Usuarios\\aleko\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",

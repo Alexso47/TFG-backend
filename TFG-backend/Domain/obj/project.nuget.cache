@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/w5GGuapFPkUy1nlHwaQuNPsZvbupyg6B5tMnhq125Y+lWMtkl8vzpmw+GZjxWO2EMEsbXO/t3UL7c1/klvcPQ==",
+  "dgSpecHash": "T/6S20bJ6Kp7mJmiFUXrUwszusLJeqGHd0nBXYZxUiTGQQXBoyz4gkV2kxT9F8c3E9zfmhsDYeJBTSBEINyaLA==",
   "success": true,
-  "projectFilePath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\TFG-backend\\TFG-backend\\Domain\\Domain.csproj",
+  "projectFilePath": "X:\\Usuarios\\aleko\\Documents\\Uni\\2\\TFG\\GitHub\\BackEnd\\TFG-backend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "X:\\Usuarios\\aleko\\.nuget\\packages\\mediatr\\8.0.0\\mediatr.8.0.0.nupkg.sha512",
     "X:\\Usuarios\\aleko\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",

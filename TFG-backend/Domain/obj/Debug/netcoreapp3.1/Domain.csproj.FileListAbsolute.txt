@@ -16,3 +16,12 @@ X:\Usuarios\aleko\Documents\Uni\2\TFG\TFG-backend\TFG-backend\Domain\obj\Debug\n
 X:\Usuarios\aleko\Documents\Uni\2\TFG\TFG-backend\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 X:\Usuarios\aleko\Documents\Uni\2\TFG\TFG-backend\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 X:\Usuarios\aleko\Documents\Uni\2\TFG\TFG-backend\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+X:\Usuarios\aleko\Documents\Uni\2\TFG\GitHub\BackEnd\TFG-backend\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
