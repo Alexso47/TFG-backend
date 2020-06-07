@@ -1,0 +1,14 @@
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Application.dll
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Application.pdb
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Domain.dll
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Infrastructure.dll
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.dll
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.pdb
+X:\Usuarios\aleko\Documents\Uni\2\TFG\TFGGit\TFGALEX\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
