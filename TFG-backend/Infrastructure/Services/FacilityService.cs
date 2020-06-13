@@ -60,5 +60,18 @@ namespace Infrastructure.Services
             connection.Close();
             return result;
         }
+
+        public async Task<List<string>> GetFIDS()
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT F.Id
+                            FROM Facilities F";
+
+            List<string> result = connection.Query<string>(sql) != null ? connection.Query<string>(sql).ToList() : new List<string>() ;
+
+            connection.Close();
+            return result;
+        }
     }
 }

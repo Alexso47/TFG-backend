@@ -104,5 +104,62 @@ namespace Infrastructure.Services
 
             return filterStr;
         }
+
+        public async Task<Arrivals> GetArrivalById(int id)
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT A.Id AS Id 
+                            FROM Arrivals AS A
+                            WHERE A.Id = '" + id + "'";
+
+            var result = connection.Query<Arrivals>(sql);
+
+            var arrivalResult = result.Any() ? result.FirstOrDefault() : null;
+
+            connection.Close();
+            return arrivalResult;
+        }
+
+        public async Task<int> GetLastIdArrival()
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT ISNULL(MAX(A.Id),0) AS Id FROM Arrivals AS A";
+
+            var result = connection.Query<int>(sql).ToList();
+
+            var lastId = result.Any() ? result.FirstOrDefault() : 0;
+
+            connection.Close();
+            return lastId;
+        }
+
+        public async Task<int> GetLastIdArrivalSerials()
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT ISNULL(MAX(A.Id),0) AS Id FROM ArrivalSerials AS A";
+
+            var result = connection.Query<int>(sql).ToList();
+
+            var lastId = result.Any() ? result.FirstOrDefault() : 0;
+
+            connection.Close();
+            return lastId;
+        }
+
+        public async Task<int> UpdateArrivalSerialsTable(ArrivalSerials item)
+        {
+            DbConnection connection = GetConnection();
+
+            string insertQuery = @"INSERT INTO [dbo].[ArrivalSerials]([Id], [Serial], [ArrivalID]) VALUES (" +
+                item.Id + ", '" + item.Serial + "', " + item.ArrivalID + ")";
+
+            var result = connection.Execute(insertQuery);
+
+            connection.Close();
+            return result;
+        }
     }
 }

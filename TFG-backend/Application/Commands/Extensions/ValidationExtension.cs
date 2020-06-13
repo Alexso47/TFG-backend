@@ -16,7 +16,7 @@ namespace Application.Commands.Extensions
 
         public static void ValidateString(this string stringToValidate, string exceptionMessage)
         {
-            if (stringToValidate == null)
+            if (stringToValidate == null || stringToValidate == "")
             {
                 throw new Exception(exceptionMessage);
             }

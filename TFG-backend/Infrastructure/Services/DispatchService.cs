@@ -50,7 +50,7 @@ namespace Infrastructure.Services
 
             DbConnection connection = GetConnection();
 
-            string sql = @" SELECT D.Id AS Id, 
+            string sql = @" SELECT D.Id AS Dd, 
                             D.FID AS FID, 
                             D.DispatchDate AS DispatchDate,
                             D.DestinationEU AS DestinationEU,
@@ -67,7 +67,7 @@ namespace Infrastructure.Services
 
             foreach(var item in result)
             {
-                string sql2 = @" SELECT DS.Serial AS Serial, DS.Id AS Id
+                string sql2 = @" SELECT DS.Serial AS Serial, DS.Id AS Dd
                             FROM DispatchSerials DS
                             WHERE DS.DispatchID = " + item.Id;
                 var serials = connection.Query<Serials>(sql2).ToList();
@@ -134,6 +134,63 @@ namespace Infrastructure.Services
             }
 
             return filterStr;
+        }
+
+        public async Task<Dispatches> GetDispatchById(int id)
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT D.Id AS Id 
+                            FROM Dispatches AS D
+                            WHERE D.Id = '" + id + "'";
+
+            var result = connection.Query<Dispatches>(sql);
+
+            var dispatchResult = result.Any() ? result.FirstOrDefault() : null;
+
+            connection.Close();
+            return dispatchResult;
+        }
+
+        public async Task<int> GetLastIdDispatch()
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT ISNULL(MAX(D.Id),0) AS Id FROM Dispatches AS D";
+
+            var result = connection.Query<int>(sql).ToList();
+
+            var lastId = result.Any() ? result.FirstOrDefault() : 0;
+
+            connection.Close();
+            return lastId;
+        }
+
+        public async Task<int> GetLastIdDispatchSerials()
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT ISNULL(MAX(D.Id),0) AS Id FROM DispatchSerials AS D";
+
+            var result = connection.Query<int>(sql).ToList();
+
+            var lastId = result.Any() ? result.FirstOrDefault() : 0;
+
+            connection.Close();
+            return lastId;
+        }
+
+        public async Task<int> UpdateDispatchSerialsTable(DispatchSerials item)
+        {
+            DbConnection connection = GetConnection();
+
+            string insertQuery = @"INSERT INTO [dbo].[DispatchSerials]([Id], [Serial], [DispatchID]) VALUES (" +
+                item.Id + ", '" + item.Serial + "', " + item.DispatchID + ")";
+
+            var result = connection.Execute(insertQuery);
+
+            connection.Close();
+            return result;
         }
     }
 }

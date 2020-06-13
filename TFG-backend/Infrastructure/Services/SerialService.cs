@@ -104,7 +104,7 @@ namespace Infrastructure.Services
         {
             DbConnection connection = GetConnection();
 
-            string sql = @" SELECT MAX(S.Id) AS Id FROM Serials AS S";
+            string sql = @" SELECT ISNULL(MAX(S.Id),0) AS Id FROM Serials AS S";
 
             var result = connection.Query<int>(sql).ToList();
 

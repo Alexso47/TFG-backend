@@ -11,5 +11,7 @@ namespace Infrastructure.Services
         Task<Facilities> GetFacilityByFacility(string facilityName, string country, string city, string address, string zipcode);
 
         Task<Facilities> GetFacilityById(string facilityId);
+
+        Task<List<string>> GetFIDS();
     }
 }
