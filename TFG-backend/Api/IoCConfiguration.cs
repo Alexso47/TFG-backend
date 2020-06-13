@@ -35,6 +35,8 @@ namespace API
             services.AddTransient<IFacilitiesRepository, FacilitiesRepository>();
             services.AddTransient<ISerialsRepository, SerialsRepository>();
             services.AddTransient<IInvoicesRepository, InvoicesRepository>();
+            services.AddTransient<IDispatchesRepository, DispatchesRepository>();
+            services.AddTransient<IArrivalsRepository, ArrivalsRepository>();
         }
     }
 }

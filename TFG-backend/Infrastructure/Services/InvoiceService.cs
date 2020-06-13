@@ -146,7 +146,7 @@ namespace Infrastructure.Services
         {
             DbConnection connection = GetConnection();
 
-            string sql = @" SELECT ISNULL(MAX(I.Id), 0) AS Id FROM Invoices AS I";
+            string sql = @" SELECT ISNULL(MAX(I.Id),0) AS Id FROM Invoices AS I";
 
             var result = connection.Query<int>(sql).ToList();
 
@@ -160,7 +160,7 @@ namespace Infrastructure.Services
         {
             DbConnection connection = GetConnection();
 
-            string sql = @" SELECT ISNULL(MAX(I.Id), 0) AS Id FROM InvoiceSerials AS I";
+            string sql = @" SELECT ISNULL(MAX(I.Id),0) AS Id FROM InvoiceSerials AS I";
 
             var result = connection.Query<int>(sql).ToList();
 

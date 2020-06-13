@@ -71,10 +71,13 @@ namespace Application.Commands.Invoice
 
                 foreach(var s in dto.Serials)
                 {
-                    serials.Add(new SerialsDB
+                    if(s != "" && s != null && s !="[]")
                     {
-                        Serial = s
-                    });
+                        serials.Add(new SerialsDB
+                        {
+                            Serial = s
+                        });
+                    }
                 }
 
                 var invoice = new InvoicesDB
@@ -115,7 +118,7 @@ namespace Application.Commands.Invoice
             else
             {
                 dto.BuyerName.ValidateString("El nombre del comprador es necesario para compradores extraeuropeos");
-                dto.BuyerCountry.ValidateString("El país del comprador es necesario para compradores extraeuropeos");
+                dto.BuyerCountry.ValidateString("El pais del comprador es necesario para compradores extraeuropeos");
                 dto.BuyerCity.ValidateString("La ciudad del comprador es necesario para compradores extraeuropeos");
                 dto.BuyerAddress.ValidateString("La dirección del comprador es necesario para compradores extraeuropeos");
                 dto.BuyerZipCode.ValidateString("El codigo postal del comprador es necesario para compradores extraeuropeos");

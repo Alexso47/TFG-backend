@@ -121,17 +121,6 @@ namespace API.Controllers
                 BuyerAddress = request.BuyerAddress,
                 BuyerCity = request.BuyerCity,
                 BuyerZipCode = request.BuyerZipCode
-                //Id = request.Reference.Id,
-                //InvoiceDate = request.Reference.InvoiceDate,
-                //Price = request.Reference.Price,
-                //Currency = request.Reference.Currency,
-                //BuyerEU = request.Reference.BuyerEU,
-                //BuyerID = request.Reference.BuyerID,
-                //BuyerName = request.Reference.BuyerName,
-                //BuyerCountry = request.Reference.BuyerCountry,
-                //BuyerAddress = request.Reference.BuyerAddress,
-                //BuyerCity = request.Reference.BuyerCity,
-                //BuyerZipCode = request.Reference.BuyerZipCode
             };
 
             return dto;

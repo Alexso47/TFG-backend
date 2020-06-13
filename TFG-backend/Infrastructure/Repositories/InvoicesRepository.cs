@@ -76,7 +76,6 @@ namespace Infrastructure.Repositories
         {
             int adds = 0;
             int idSerial = _invoicesService.GetLastIdInvoiceSerials().Result;
-            if (idSerial == null) { idSerial = 0; }
             idSerial++;
             foreach (var s in serials)
             {

@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.DB;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,10 +10,10 @@ namespace Infrastructure
 {
     public class DBContext : DbContext
     {
-        public DbSet<Arrivals> Arrivals { get; set; }
+        public DbSet<ArrivalsDB> Arrivals { get; set; }
         public DbSet<ArrivalSerials> ArrivalSerials { get; set; }
         public DbSet<Countries> Countries { get; set; }
-        public DbSet<Dispatches> Dispatches { get; set; }
+        public DbSet<DispatchesDB> Dispatches { get; set; }
         public DbSet<DispatchSerials> DispatchSerials { get; set; }
         public DbSet<EconomicOperators> EconomicOperators { get; set; }
         public DbSet<Facilities> Facilities { get; set; }

@@ -12,5 +12,13 @@ namespace Infrastructure.Services
         Task<List<Dispatches>> GetDispatches(DispatchFilter filter);
 
         Task<int> GetTotalDispatches(DispatchFilter filter);
+
+        Task<Dispatches> GetDispatchById(int id);
+
+        Task<int> GetLastIdDispatch();
+
+        Task<int> GetLastIdDispatchSerials();
+
+        Task<int> UpdateDispatchSerialsTable(DispatchSerials item);
     }
 }
