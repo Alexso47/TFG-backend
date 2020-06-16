@@ -73,5 +73,19 @@ namespace Infrastructure.Services
             connection.Close();
             return result;
         }
+        
+        public async Task<List<string>> GetFIDSByEO(string eoid)
+        {
+            DbConnection connection = GetConnection();
+
+            string sql = @" SELECT F.Id
+                            FROM Facilities F
+                            WHERE F.EOID = '" + eoid + "'";
+
+            List<string> result = connection.Query<string>(sql) != null ? connection.Query<string>(sql).ToList() : new List<string>() ;
+
+            connection.Close();
+            return result;
+        }
     }
 }

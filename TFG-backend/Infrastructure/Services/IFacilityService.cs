@@ -13,5 +13,7 @@ namespace Infrastructure.Services
         Task<Facilities> GetFacilityById(string facilityId);
 
         Task<List<string>> GetFIDS();
+        
+        Task<List<string>> GetFIDSByEO(string eoid);
     }
 }
