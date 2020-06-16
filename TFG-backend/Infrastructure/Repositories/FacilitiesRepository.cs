@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Infrastructure.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,67 +11,49 @@ namespace Infrastructure.Repositories
     {
 
         private readonly DBContext _context;
+        private IFacilityService _facilityService;
+        private IEconomicOperatorService _economicOperatorService;
 
-        public FacilitiesRepository(DBContext context)
+
+        public FacilitiesRepository(DBContext context, IFacilityService facilityService, IEconomicOperatorService economicOperatorService)
         {
             _context = context;
+            _facilityService = facilityService;
+            _economicOperatorService = economicOperatorService;
         }
 
-        public async Task<Facilities> Add(Facilities Facility)
+        public async Task<string> Add(Facilities facility)
         {
-            var result = await _context.Facilities.AddAsync(Facility);
-            return result.Entity;
+            var correctEOID = await _economicOperatorService.GetEOById(facility.EOID);
+
+            if (correctEOID != null || correctEOID == "")
+            {
+                var exist = await _facilityService.GetFacilityById(facility.Id);
+                if (exist == null)
+                {
+                    try
+                    {
+                        var result = await _context.Facilities.AddAsync(facility);
+                        await _context.SaveChangesAsync();
+                        return result.Entity.Id;
+                    }
+                    catch
+                    {
+                        throw new Exception("Error creando el Facility");
+                    }
+
+                }
+                else
+                {
+                    throw new Exception("Ya existe este Facility");
+                }
+            }
+            else
+            {
+                throw new Exception("El EOID asociado no existe");
+            }
+           
         }
 
-        //public Task<Facility> Get(int FacilityId)
-        //{
-        //    return _context.Facilities.FirstOrDefaultAsync(x => x.Id == FacilityId);
-        //}
-
-        //public Task<Facility> GetActiveUntilNull(string name)
-        //{
-        //    return _context.Facilities.FirstOrDefaultAsync(x => x.ActiveUntil == null && x.Name == name);
-        //}
-
-        //public Task<Facility> GetActive(string name)
-        //{
-        //    return _context.Facilities.FirstOrDefaultAsync(x => x.Name == name && (x.ActiveUntil == null || x.ActiveUntil >= DateTime.Today));
-        //}
-
-        //public async Task<Facility> Update(Facility Facility)
-        //{
-        //    var result = await Task.FromResult(_context.Facilities.Update(Facility));
-        //    return result.Entity;
-        //}
-
-        //public bool Delete(Facility Facility)
-        //{
-        //    _context.Facilities.Remove(Facility);
-        //    return true;
-        //}
-
-        //public Task<List<Facility>> GetAll(bool includeDeleted = false)
-        //{
-        //    if (includeDeleted)
-        //    {
-        //        return _context.Facilities.IgnoreQueryFilters().ToListAsync();
-        //    }
-        //    else
-        //    {
-        //        return _context.Facilities.ToListAsync();
-        //    }
-        //}
-
-        //public Task<Facility> Get(int FacilityId, bool includeDeleted = false)
-        //{
-        //    if (includeDeleted)
-        //    {
-        //        return _context.Facilities.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == FacilityId);
-        //    }
-        //    else
-        //    {
-        //        return _context.Facilities.FirstOrDefaultAsync(x => x.Id == FacilityId);
-        //    }
-        //}
     }
 }

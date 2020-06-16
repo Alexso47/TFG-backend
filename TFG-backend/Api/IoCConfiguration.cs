@@ -28,6 +28,7 @@ namespace API
             services.AddTransient<IArrivalService, ArrivalService>();
             services.AddTransient<ISerialService, SerialService>();
             services.AddTransient<IFacilityService, FacilityService>();
+            services.AddTransient<IEconomicOperatorService, EconomicOperatorService>();
         }
 
         private static void RegisterRepositories(IServiceCollection services)
@@ -37,6 +38,7 @@ namespace API
             services.AddTransient<IInvoicesRepository, InvoicesRepository>();
             services.AddTransient<IDispatchesRepository, DispatchesRepository>();
             services.AddTransient<IArrivalsRepository, ArrivalsRepository>();
+            services.AddTransient<IEORepository, EORepository>();
         }
     }
 }
